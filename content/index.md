@@ -1,11 +1,12 @@
 ---
-Title: Home
-Description: This is our index page.
+Title: Om mig
+Description: Den här sidan har lite info om mig.
 ---
 
-Home page
+Om mig själv
 ==========================
 
-The source for this page is in `content/index.md`.
 
-This is a sample home page written in markdown with some frontmatter defined.
+<img src="../assets/img/me.png" alt="Bild på mig själv" width="200">
+
+<p>Jag heter Simon Långström och ska som ni kanske vet gå webprogrammeringsprogrammet här på BTH. När det kommer till intressen har jag rätt många, men jag gillar en bokgenre som heter cosmic horror, rollspel, samt allt som har med Tolkien och Sagan om Ringen att göra. Programmering är såklart också kul!</p>
