@@ -1,9 +1,13 @@
+
+
+
 * {
     box-sizing: border-box;
     border: 0 none;
     margin: 0;
     padding: 0;
 }
+
 
 ol, ul {
     padding-left: 1.5em;
@@ -71,11 +75,11 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #222;
+    border-top: 1px solid rgb(112, 58, 58);
 }
 
 .footer a {
-    color: #222;
+    color: rgb(64, 54, 54);
 }
 
 .footer .social {
