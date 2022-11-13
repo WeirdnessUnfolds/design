@@ -1,16 +1,33 @@
-@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/normalize.css/normalize';
 @import 'variables';
 
 @import 'blockquotes';
 @import 'code';
 
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
 
 
 
-body {
-    background-color: $background-color;
+
+.bgwrap {
+    
+    background-image: url("../../../assets/img/cyberpunk_bg.png");
+    opacity: 0.5;
+
 }
 
 * {
-    color: $font-color;
+    color: $font-alternative-color;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+
+
 }

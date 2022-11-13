@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
     "style": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map",
-    "style-min": "sass kmom02/scss/style.scss kmom02/css/style.min.css --no-source-map --style compressed"
+    "style-min": "sass kmom02/scss/style.scss kmom02/css/style.min.css --no-source-map --style compressed",
+    "lint-fix": "stylelint \"**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "normalize.css": "^8.0.1",
     "sass": "^1.56.1",
+    "sass-lint-auto-fix": "^0.21.2",
     "stylelint": "^14.14.1",
     "stylelint-config-sass-guidelines": "^9.0.1"
   }
