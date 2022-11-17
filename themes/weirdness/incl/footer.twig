@@ -1,7 +1,7 @@
 <div class="footer">
     <div>
         <p>
-            En footer med lite text.
+            Allt på den här sidan är nonkommersiellt.
         </p>
     </div>
     <div class="social">
@@ -10,6 +10,10 @@
         <a href="{{ social.url }}" title="{{ social.title }}" role="button">
             <i class="{{ social.icon }}" aria-hidden="true"></i>
             <span class="sr-only">{{ social.title }}</span>
+        </a>
+        <a href="{{ social.creativeurl }}" title="{{ social.creativetitle }}" role="button">
+            <i class="{{ social.creativeicon }}" aria-hidden="true"></i>
+            <span class="sr-only">{{ social.creativetitle }}</span>
         </a>
         {% endfor %}
     </div>
