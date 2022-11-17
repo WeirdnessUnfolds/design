@@ -3,8 +3,7 @@ Title: Om mig
 Description: Den här sidan har lite info om mig.
 ---
 
-<h3>Om mig</h3>
-==========================
+<h2>Om mig</h2>
 
 
 <img class="meimg" src="assets/img/me.png" alt="Bild på mig själv" width="200">
