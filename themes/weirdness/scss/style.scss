@@ -1,8 +1,10 @@
-@import "../../../node_modules/normalize.css/normalize.css";
+@import '../../../node_modules/normalize.css/normalize.css';
 @import 'variables';
 @import 'technology';
 @import 'blockquotes';
 @import 'code';
+@import 'tech_content';
+@import 'tech_sidebar';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -15,9 +17,28 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 .bgwrap {
     background-image: url('../../../assets/img/cyberpunk_bg.png');
-    background-size: auto;
     padding-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-height: calc(100vh - 40px);
 }
+
+p {
+    font-size: 2wv;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    padding-left: 2%;
+}
+
+
 
 * {
     color: $font-alternative-color;
@@ -37,8 +58,9 @@ body div {
 html {
     min-height: 100%;
 }
+
 code {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 h2,
@@ -57,99 +79,13 @@ p {
     font-family: 'Encode Sans', sans-serif;
 }
 
-/*landingpage, grid parent*/
-
-.landingpage {
-    display: grid;
-    gap: 1em 1em;
-    grid-template-columns: 15% 15% 15%;
-    grid-auto-flow: row;
-    justify-items: center;
-    grid-template-areas:
-    "header header" 
-    "first_row  first_rowside"
-    "second_row second_rowside"
-    "third_row third_rowside"
-    "final_row final_rowside";
- }
-  
-.rubric  {
-    grid-column: span 3;
-    justify-self: center;
-    grid-area: header; 
-    padding-left: 14%;
-}
-
-
-.landingpage h1 {
-    font-size: 500%;
-    grid-column: span 3;
-    justify-self: center;
-}
-
-.techfont {
-    font-size: 120%;
-
-
-
-}
 
 /* Size of logos */
 
-.fa-brands, .fab {
+.fa-brands,
+.fab {
     font-weight: 400;
-    font-size: 300%;
-}
 
-/* Grid children */
-
-.tech-box {
-
-display: flex;
-
-
-
-}
-
-
-#html {
-    grid-area: first_rowside;
-    grid-column: span 2;
-    align-items: center;
-}
-
-#css {
-    grid-area: first_row;
-    align-items: center;
-}
-
-#js {
-    grid-area: second_row;
-    align-items: center;
-}
-
-#php {
-    grid-area: second_row;
-    align-items: center;
-}
-
-#py {
-    grid-area: third_row;
-    align-items: center;
-}
-
-#git {
-    grid-area: final_row;
-    align-items: center;
-}
-
-#sql {
-    grid-area: final_row;
-    align-items: center;
-}
-
-.row1 {
-    grid-column: span 2;
 }
 
 
@@ -158,6 +94,7 @@ display: flex;
     flex-direction: column;
     border-top: 2px solid $highlight-color;
     font-size: smaller;
+    text-align: center;
 }
 
 .social a {

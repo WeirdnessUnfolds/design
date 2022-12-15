@@ -1,0 +1,31 @@
+
+
+.link-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 2%;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5em;
+    border-right: 3px solid #8a1948;
+    padding-left: 2%;
+    padding-right: 1%;
+    margin-bottom: 1%;
+}
+
+.link-bar a {
+    text-decoration: none;
+    border-bottom: 1px solid #8a1948;
+}
+
+@media screen and (max-width: 700px) {
+    .link-bar {
+        visibility: collapse;
+    }
+
+    body {
+        font-size: 4vh;
+
+
+    }
+}
